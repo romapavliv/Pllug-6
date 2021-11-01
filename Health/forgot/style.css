@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.conteiner {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.left-area{
+    background-image: url('./img/mask.png');
+    background-size: cover;
+    width: 50%;
+}
+.right-area{
+    display: flex;
+    width: 50%;
+    min-width: 300px
+}
+.text-area {
+    color: white;
+    margin: 9.3% 9% 0;
+}
+.title {
+    font-family: Poppins; /* not free*/
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.title:first-letter {
+    color: red;
+}
+.sub-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 11%;
+
+}
+.disc {
+    font-weight: 400;
+    opacity: .8;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 732px;
+}
+form.form-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    min-width: 200px;
+    margin: 0 auto;
+    color: #181C32;
+    font-size: 13px;
+    font-weight: 500;
+}
+.form-title {
+    color: #8D8DA5;
+    font-size: 36px;
+    margin-bottom: 12%;
+}
+input {
+    border: 1px solid #DBDFEB;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 15.5px;
+    margin-bottom: 30px;
+    color: #8D8DA5;
+}
+.last{
+    margin-bottom: 0;
+}
+.btn-submit {
+    background: #E2222D;
+    width: 164px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 auto;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn-submit:hover {
+    background: white;
+    color: #E2222D;
+    border: 1px solid #E2222D;
+    transition: all .5s ease-in-out;
+}
+small {
+    margin: 20px 0;
+    color: #181C32;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    text-decoration: underline;
+}
+label {
+    margin-bottom: 10px;
+}
+a {
+    color: #181C32;
+}
+.forgot {
+    text-align: right;
+    padding-bottom: 5%;
+    color: #181C32;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .left-area{
+        width: 100%;
+    }
+    .right-area{
+        width: 100%;
+    }
+    .form-title{
+        margin-top: 0;
+    }
+}

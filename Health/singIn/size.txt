@@ -1,0 +1,5 @@
+less than 576px
+576px
+768px
+992px
+1200px and up

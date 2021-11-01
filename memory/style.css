@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formArea {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* display: none; */
+}
+input#inp {
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+button {
+    background:rgb(20, 240, 20);
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    color: white;
+}
+
+.wrapper {
+    height: 100vh;
+    display: none;
+}
+
+.memory-game {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    perspective: 1000px;
+}
+.memory-card {
+    border: 1px solid black;
+    width: 25%;
+    height: 25%;
+    transform: scale(1);
+    position: relative;
+    transition: transform 0.5s;
+    transform-style:preserve-3d ;
+}
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+img {
+    width: 90%;
+}
+.front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+#timer {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid;
+    padding: 10px;
+}
+#title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.counter {
+    text-align: center;
+    color:rgb(20, 240, 20);
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+.winPage {
+    font-size: 21px;
+    line-height: 1.8;
+    top: 35%;
+    left: 50%;
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 370px;
+}
+
+.winPage.closed {
+	display: none;
+}
+
+.counterWin, .finalTime {
+    color:rgb(20, 240, 20)
+}

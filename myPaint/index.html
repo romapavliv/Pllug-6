@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pham mem ve</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <center>
+      <div id="tools">
+        <button class="reset" onclick="reset()">RESET</button>
+        <a id="save-canvas">Download</a>
+
+        <button class="eraser" onclick="eraser()">Eraser</button>
+        <button class="tool" onclick="setTool('pen')">Pen</button>
+        <button class="tool" onclick="setTool('line')">Line</button>
+        <button class="tool" onclick="setTool('rect')">square</button>
+        <button class="tool" onclick="setTool('circle')">Circle</button>
+
+        <div class="color-area">
+          <div id="setColor" class="curent-color"></div>
+
+          <button class="brown" onclick="changeColor('#704214')">bra</button>
+          <button class="red" onclick="changeColor('#FF0000')">red</button>
+          <button class="blue" onclick="changeColor('#0000FF')">blu</button>
+          <button class="green" onclick="changeColor('#00ff00')">gre</button>
+          <button class="yellow" onclick="changeColor('#FFFF00')">yel</button>
+          <button class="orange" onclick="changeColor('#FFA500')">ora</button>
+          <button class="purple" onclick="changeColor('#800080')">pur</button>
+          <button class="gyell" onclick="changeColor('#00ff22')">gsl</button>
+          <button class="ocean" onclick="changeColor('#2ff1ff')">pin</button>
+          <button class="limon" onclick="changeColor('#FF1493')">lim</button>
+        </div>
+
+        <button class="size" onclick="changeLineWidth(1)">Size 1</button>
+        <button class="size" onclick="changeLineWidth(2)">Size 2</button>
+        <button class="size" onclick="changeLineWidth(5)">Size 5</button>
+        <button class="size" onclick="changeLineWidth(10)">Size 10</button>
+        <button class="size" onclick="changeLineWidth(25)">Size 25</button>
+      </div>
+    </center>
+    <canvas id="board"></canvas>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
