@@ -54,6 +54,7 @@
 }
 .del:hover {
     transform: rotate(90deg);
+    
     transition: transform .3s ease-in;
 }
 
