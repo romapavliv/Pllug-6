@@ -165,3 +165,5 @@ saveCanvas.addEventListener(
   },
   false
 );
+
+Завдання виконано.
