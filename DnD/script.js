@@ -77,3 +77,5 @@ previewContainer.addEventListener("dragover", (e) => {
   const nextEl = takedEl === activeEl ? takedEl.nextElementSibling : takedEl;
   previewContainer.insertBefore(activeEl, nextEl);
 });
+
+Завдання виконано
