@@ -6,10 +6,14 @@ const formArea = document.querySelector(".formArea");
 const wrapper = document.querySelector(".wrapper");
 const counter = document.querySelector(".counter");
 const counterWin = document.querySelector(".counterWin");
-const timerArea = document.getElementById("timer");
-const finalTime = document.querySelector(".finalTime");
 const winModal = document.querySelector(".winPage");
 const playAgain = document.querySelector(".playAgain");
+
+const timerArea = document.getElementById("timer");
+const finalTime = document.querySelector(".finalTime");
+let stopTimer = true;
+let ready = true;
+
 
 let hasFlipCard = false;
 let bordFrez = false;
@@ -17,8 +21,6 @@ let firstCard;
 let secondCard;
 let namePlayer = [];
 let countCard = 0;
-let ready = true;
-let stopTimer = true;
 
 function timerStart() {
   if (ready == true) {

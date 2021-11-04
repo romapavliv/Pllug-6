@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+.content {
+    text-align: center;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+button {
+    width: 100px;
+    height: 30px;
+    margin: 1%;
+    color: rgb(74, 230, 2);
+    font-weight: bold;
+    border-radius: 10px;
+}
+button:hover{
+    border: 1px solid yellow;
+}
+button:active{
+    box-shadow: 5px 5px 5px black;
+}
+
+.inputArea {
+    border: 1px solid black;
+    padding: 15px 0;
+    position: relative;
+}
+
+input#inputText {
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+
+span.coutner {
+    position: absolute;
+    right: 62px;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#trackers {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.btns{
+    display: flex;
+    width: 115px;
+}
+.btnPause{
+    background-color: green;
+    color: #000;
+}
+.btnRemove {
+    background-color: red;
+    color: #000;
+}
+
+.timerItem {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 5px;
+}
+
+span {
+    padding: 0 2%;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+p {
+    font-size: 1.5rem;
+}
