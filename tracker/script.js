@@ -186,3 +186,4 @@ window.addEventListener("unload", Tracker.saveToLS);
 window.onstorage = () => {
   Tracker.loadFromLS();
 };
+Завдання виконано
